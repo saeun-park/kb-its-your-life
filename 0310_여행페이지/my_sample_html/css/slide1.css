@@ -1,0 +1,28 @@
+.sec2 {
+  position: relative;
+}
+
+.slide1 {
+  border: 10px solid red;
+}
+
+.slide1 > ul {
+  border: 5px solid lightblue;
+}
+
+.slide1 > ul > * {
+  border: 1px solid rebeccapurple;
+}
+
+.next1 {
+  right: -10px;
+}
+
+.prev1 {
+  left: -10px;
+}
+
+.sec2 .pg1 {
+  top: auto;
+  bottom: -30px;
+}

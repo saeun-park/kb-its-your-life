@@ -1,0 +1,106 @@
+#app .hd {
+  border: 1px solid red;
+}
+/* .hd로만 하면 id가 class보다 점수가 높아서 red가 반영이 안 되고 lightgray가 반영됨 */
+/* red를 적용하기 위해서 #app .hd로 변경해줌 -> 점수 더 높아짐 */
+
+main {
+  padding-top: 100px;
+}
+
+main h2 {
+  display: flex;
+}
+
+.hd > * {
+  border: 1px solid lightblue;
+}
+
+.hd img {
+  width: 100%;
+}
+/* 100%는 h1사이즈에 맞춰서 사이즈가 나옴(여전히 크기가 크다) */
+
+.hd {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 25, 255, 255, 0.8);
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* 대부분의 경우 헤더는 justify-content: space-between으로 설정해야할 것 같음  */
+/* align-iems: center는 높이의 중간이 됨 */
+
+body {
+  background-color: lightgray;
+}
+
+.hd .logo {
+  width: 200px;
+}
+
+.hd .gnb {
+  display: flex;
+  gap: 1rem;
+}
+
+.side {
+  display: flex;
+}
+
+.gnb a {
+  border: 1px solid skyblue;
+}
+
+.hd .gnb a {
+  padding: 0.5rem 1rem;
+  transition: all 0.3s;
+}
+
+.hd .gnb a:hover {
+  /* padding: 0.5rem 2rem; */
+  background-color: rgb(146, 184, 218);
+  border-color: blue;
+}
+
+.side a {
+  /* border: 1px solid var(--mcolor1); */
+  border: 1px solid plum;
+  /* border-radius: 10px; */
+  padding: 0.5rem;
+}
+/* var()에는 불러올 수 있는 변수들이 나옴 */
+
+.side a:hover {
+  border-color: rgb(66, 4, 14);
+  background-color: pink;
+}
+
+/* 모바일 버전 */
+/* @media (min-width: 300px) and (max-width: 600px) {
+  .hd {
+    background-color: tomato;
+  }
+} */
+/* 특정 크기 이하로 줄어들 때 background-color가 특정 색상으로 변경됨 */
+
+/* 특정 사이즈 이하로 떨어졌을때 nav과 side가 안 보임 */
+
+.btn_ham {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  #app .gnb,
+  .side {
+    display: none;
+  }
+  .btn_ham {
+    display: block;
+    cursor: pointer;
+    color: tomato;
+  }
+}
