@@ -1,0 +1,55 @@
+<!-- 방법1 -->
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>Traditional Event</title>
+    <script>
+      window.onload = function () {
+        let btn = document.getElementById('button');
+
+        btn.onclick = function () {
+          alert('click');
+        };
+      };
+    </script>
+  </head>
+  <body>
+    <button id="button">버튼</button>
+  </body>
+</html> -->
+
+<!-- 방법2 -->
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>Traditional Event</title>
+  </head>
+  <body>
+    <button onclick="alert('click')">버튼</button>
+  </body>
+</html> -->
+
+<!-- 방법3 -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Traditional Event</title>
+    <script defer>
+      window.onload = function () {
+        let btn = document.getElementById('button');
+        // btn.setAttribute('onclick', 'alert("click")');
+
+        // btn.onclick = function () {
+        //   alert('click');
+        // };
+        btn.addEventListener('click', () => {
+          alert(btn.innerText);
+        });
+      };
+    </script>
+  </head>
+  <body>
+    <button id="button">버튼</button>
+    <!-- <button id="button" onclick="alert('click')">버튼</button> -->
+  </body>
+</html>
