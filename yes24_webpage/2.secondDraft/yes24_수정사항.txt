@@ -1,0 +1,40 @@
+수정한 부분
+-------------------------HTML-------------------------
+일단 레이아웃을 다시 짬
+
+<header>
+- 로그인을 div→ span태그로 변경
+
+<main>
+- div로 body 전체를 감싸고 (class를 지정해준다)
+- 회원, 비회원 주문확인을 first draft에는 안 넣었음, ul/list로 추가
+- 기존에 form에 아이디 찾기, 비밀번호찾기를 넣어놨었음(왜?) → 빼기
+- form 안의 아이디, 비번, 체크박스, 로그인버튼 모두에게 클래스 할당
+- 아이디 찾기/비밀번호 찾기 사이에 <em class="divi">|</em> 구분자 지정 (CSS에서 예쁘게 꾸미기)
+
+- social login부분을 table로 처리했던 것을 페이지 참고하여 ul/list로 변경, span으로 처리
+	- ul > li > a > span[logo, text]
+
+-List 구분자가 40px를 차지하는 것을 확인함, li들을 왼쪽으로 40px 옮겨줘야함(margin-left:-40px)
+
+
+  /* text들을 가운데로 정렬하고 싶은데...
+  logo가 있는 td 오른쪽에 margin이 약 30px정도 있어서 강제로 오른쪽에 30px 패딩 넣어줌...
+  이상한 게 왼쪽에 -30px 패딩 넣어주면 적용이 안 됨...
+  td 오른쪽에 공간은 왜 있으며 패딩은 왜 적용이 안 되며 ㅠ
+  
+  하여튼 그래서 text가 들어있는 박스에 border 설정 못 함*/
+	-> 로고 td에 class=img를 넣어주고, css에서 table .img width를 40으로 설정했더니 해결됨
+
+
+<footer>
+- footer를 원래 하단 배너+copyright로 지정했었는데, 회원가입 페이지에 하단 배너가 그대로 나온 것을 보고(다윤님 아이디어) footer를 copyright로만 설정함.
+-------------------------------------------------------
+
+-------------------------CSS---------------------------
+- 회원가입을 input(type=button)으로 지정했다가, 회원가입 글씨에 strong을 주기 위해 button으로 바꿈
+
+- body에 배경색 지정 (yes24페이지에서 색상 가져옴. #f8f8f8)
+- content에 흰 배경색 지정
+- header class에 justify-content: space-between 해서 가운데 정렬
+
