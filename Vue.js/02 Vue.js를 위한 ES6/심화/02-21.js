@@ -1,0 +1,16 @@
+const p = new Promise((num) => {
+  setTimeout(() => {
+    let num = Math.random(); //0~1사이의 난수 발생
+    if (num >= 0.8) {
+      error: throw new Error(`생성된 숫자가 0.8이상임 - ${num}`);
+    } else {
+      result: num;
+    }
+  }, 2000);
+});
+p.then((result) => {
+  console.log('처리 결과 : ', result);
+}).then((error) => {
+  console.log('오류 : ', error);
+});
+console.log('## Promise 객체 생성!');
