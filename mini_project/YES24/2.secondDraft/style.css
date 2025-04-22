@@ -1,0 +1,265 @@
+/* -------------------------------------------------------- */
+/* 전체*/
+/* -------------------------------------------------------- */
+body {
+  background-color: #f8f8f8;
+  font-family: '맑은 고딕', 'Malgun Gothic', 'Apple SD Gothic Neo', AppleGothic,
+    '돋움', Dotum, '굴림', Gulim, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* -------------------------------------------------------- */
+/* header */
+/* -------------------------------------------------------- */
+/* header 인라인 정렬 */
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: 960px;
+  margin: 0 auto;
+}
+/* 로그인 (색상과 폰트는 페이지 참고) */
+.header span {
+  font-size: 24px;
+  color: rgb(51, 51, 51);
+  font-family: 'Noto Sans KR';
+}
+
+/* 회원가입 (색상은 페이지 참고, padding과 Border는 비교하면서 조정) */
+.header button {
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: white;
+  border: 0.9px solid rgb(216, 216, 216);
+  border-radius: 3px;
+}
+
+/* 로고 사이즈 조정 */
+.header img {
+  width: 125px;
+  height: 100px;
+}
+
+/* -------------------------------------------------------- */
+/* main */
+/* -------------------------------------------------------- */
+/* 회원/비회원 주문확인 */
+
+/* 구분자가 40px를 차지하고 있기 때문에 기본 Margin, padding을 없애줌 */
+.member-area ul {
+  margin: 0;
+  padding: 0;
+}
+
+.member-area li {
+  list-style: none;
+}
+
+.member-area a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  color: rgb(51, 51, 51);
+}
+
+.member-or-not {
+  display: flex;
+}
+
+.member-area .member,
+.member-area .no-member {
+  border: 1px solid rgb(216, 216, 216);
+  width: 180px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.member-area .member {
+  width: 180px;
+  /* border-bottom-color: white; */
+}
+
+.member-area {
+  margin-bottom: 20px;
+}
+
+/* -------------------------------------------------------- */
+
+.content {
+  display: flex;
+  /* flex-start로 right-banner과 login-wrapper의 시작 부분 맞춰줌 */
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: white;
+  border: 1px solid rgb(216, 216, 216);
+  width: 960px;
+  /* 가운데 정렬 */
+  margin: 0 auto;
+
+  /* padding이나 border이 960에 포함되도록 */
+  box-sizing: border-box;
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+.login-wrapper {
+  width: 360px;
+  margin-left: 100px;
+}
+
+.right-banner {
+  margin-right: 100px;
+}
+
+.banner1 img,
+.banner2 img {
+  width: 360px;
+}
+
+.login-id input,
+.login-pw input,
+.login-btn input {
+  border: 1px solid rgb(235, 235, 235);
+  width: 360px;
+  padding: 15px;
+  border-radius: 3px;
+  /* padding이나 border이 360에 포함되도록 */
+  box-sizing: border-box;
+}
+
+/* 가상 클래스 사용 */
+.login-id input::placeholder,
+.login-pw input::placeholder {
+  font-size: 16px;
+}
+
+.login-btn input {
+  background-color: rgb(0, 128, 255);
+  padding-top: 19px;
+  padding-bottom: 19px;
+}
+
+.login-btn input[type='submit'] {
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+}
+
+/* 아이디, 비번 사이 간격 띄우기 */
+.login-pw input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.find-idpw a,
+.find-idpw span,
+.login-checkbox {
+  color: rgb(102, 102, 102);
+  font-size: 12px;
+}
+
+.login-checkbox {
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+.login-btn {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.find-idpw {
+  margin-bottom: 30px;
+}
+/* -------------------------------------------- */
+/* sns 아이디로 로그인 파트 */
+/* !!! List 구분자가 40px를 차지하는 것을 확인함, li들을 왼쪽으로 40px 옮겨줘야함 */
+.login-sns ul {
+  list-style: none;
+}
+
+/* 왼쪽으로 40px 옮기기 margin-left -40px
+    이었는데 ul list를 table로 바꿔주어 할 필요 없게 됨*/
+.login-sns table {
+  width: 360px;
+  /* padding: ; */
+  height: 40px;
+  border-collapse: collapse;
+}
+
+table .text {
+  /* border: 1px solid red; */
+  text-align: center;
+  /* padding-right: 30px; */
+  /* text들을 가운데로 정렬하고 싶은데...
+  logo가 있는 td 오른쪽에 margin이 약 30px정도 있어서 강제로 오른쪽에 30px 패딩 넣어줌...
+  이상한 게 왼쪽에 -30px 패딩 넣어주면 적용이 안 됨...
+  td 오른쪽에 공간은 왜 있으며 패딩은 왜 적용이 안 되며 ㅠ
+  
+  하여튼 그래서 text가 들어있는 박스에 border 설정 못 함
+  --> 로고 td에 img class 설정해주고 width:40px로 설정해주니 해결됨*/
+}
+
+table .img {
+  width: 40px;
+}
+
+/* table에서 tr 사이에 간격을 주는 다른 방법은 없을까 */
+/* table tr {
+  border-bottom: 10px solid white;
+} */
+
+table td {
+  border: 1px solid rgb(235, 235, 235);
+}
+
+.login-sns a {
+  font-size: 14px;
+  color: rgb(51, 51, 51);
+}
+
+.login-sns img {
+  width: 20px;
+  height: auto;
+  padding: 10px;
+  /* border: 1px solid rgb(235, 235, 235); */
+}
+
+/* 모바일 아이콘의 크기 조정 */
+.kakao-logo,
+.facebook-logo,
+.mobile-logo {
+  width: 24px; /* 아이콘의 크기를 고정 */
+  height: 24px;
+}
+
+.banner3 {
+  display: flex; /* 부모 요소를 flexbox로 설정 */
+  justify-content: center; /* 수평 가운데 정렬 */
+  align-items: center; /* 수직 가운데 정렬 */
+  margin-top: 20px;
+}
+
+/* -------------------------------------------------------- */
+/* footer */
+/* -------------------------------------------------------- */
+.footer {
+  text-align: center;
+  margin: 0 auto;
+  color: rgb(102, 102, 102);
+  font-size: 12px;
+  height: 50px;
+  line-height: 50px;
+}

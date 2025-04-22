@@ -1,0 +1,335 @@
+/* -------------------------------------------------------- */
+/* 초기화 */
+/* -------------------------------------------------------- */
+body {
+  background-color: #f8f8f8;
+  font-family: '맑은 고딕', 'Malgun Gothic', 'Apple SD Gothic Neo', AppleGothic,
+    '돋움', Dotum, '굴림', Gulim, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* li {
+  list-style: none;
+} */
+
+/* -------------------------------------------------------- */
+/* header */
+/* -------------------------------------------------------- */
+#header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: 960px;
+  margin: 0 auto;
+}
+
+/* 죄측 로고 (사이즈 조절) */
+#header img {
+  width: 125px;
+  height: 100px;
+}
+
+/* 중앙 로그인 (색상과 폰트는 페이지 참고) */
+#header span {
+  font-size: 24px;
+  color: rgb(51, 51, 51);
+  font-family: 'Noto Sans KR';
+}
+
+/* 우측 회원가입 (색상은 페이지 참고, padding과 border는 직접 비교하면서 조정) */
+#header button {
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: white;
+  border: 0.9px solid rgb(216, 216, 216);
+  border-radius: 3px;
+}
+
+/* -------------------------------------------------------- */
+/* main */
+/* -------------------------------------------------------- */
+/* top content */
+#top-content {
+  position: relative;
+  display: flex;
+  /* flex-start로 right-banner과 login-wrapper의 시작 부분 맞춰줌 */
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: white;
+  border: 1px solid rgb(216, 216, 216);
+  width: 960px;
+  /* 가운데 정렬 */
+  margin: 0 auto;
+  padding: 60px 0px;
+}
+
+/* -------------------------------------------------------- */
+/* top content > login-wrapper */
+.login-wrapper {
+  width: 360px;
+  margin-left: 100px;
+}
+
+/*  */
+/* 탭메뉴 : 회원/비회원 주문확인 */
+/* 구분자가 40px를 차지하고 있기 때문에 기본 Margin, padding을 없애줌 */
+.tab-menu {
+  margin-bottom: 20px;
+}
+
+.member-or-guest {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
+.member-or-guest li {
+  border: 1px solid rgb(216, 216, 216);
+  width: 180px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #f8f8f8;
+}
+
+.member-or-guest a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  color: rgb(51, 51, 51);
+}
+
+.member-or-guest .active {
+  border: 1px solid #6699cc;
+  border-bottom: 1px solid white;
+  background-color: white;
+}
+
+.member-or-guest .active span {
+  color: #6699cc;
+  font-weight: bold;
+}
+
+/*  */
+/* 로그인 폼 */
+.login-box input {
+  border: 1px solid rgb(235, 235, 235);
+  width: 360px;
+  padding: 15px;
+  border-radius: 3px;
+  /* padding이나 border이 360에 포함되도록 */
+  box-sizing: border-box;
+  cursor: pointer;
+  color: #196ab3;
+  font-weight: bolder;
+}
+
+.login-box input:focus {
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid #6699cc;
+  cursor: text;
+}
+
+.login-box input::placeholder {
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+.login-box input:focus::placeholder {
+  visibility: hidden;
+}
+
+.login-pw input {
+  /* 아이디, 비밀번호 input box 간격 띄우기 */
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.login-checkbox {
+  margin-top: 20px;
+  font-size: 13px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  color: rgb(102, 102, 102);
+  font-size: 12px;
+}
+
+.login-checkbox span {
+  margin-right: 10px;
+}
+
+.login-checkbox .check:hover {
+  cursor: pointer;
+}
+
+.login-btn {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.login-btn input {
+  background-color: rgb(0, 128, 255);
+  padding-top: 19px;
+  padding-bottom: 19px;
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.find-idpw {
+  margin-bottom: 40px;
+}
+
+.find-idpw a,
+.find-idpw span {
+  color: rgb(102, 102, 102);
+  font-size: 12px;
+}
+
+/*  */
+/* SNS 로그인 */
+#sns-login ul {
+  list-style: none;
+  /* list style이 차지하는 부분 때문에 */
+  padding: 0;
+}
+
+.sns-id {
+  margin-top: 10px;
+}
+
+.sns-id a {
+  width: 360px;
+  font-size: 14px;
+  color: rgb(51, 51, 51);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(216, 216, 216);
+  height: 38px;
+}
+
+.sns-id .text {
+  /* flex-grow:1로 img, text 정렬 */
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sns-id img {
+  width: 20px;
+  height: auto;
+  padding: 10px;
+  border-right: 1px solid rgb(216, 216, 216);
+}
+
+/*  */
+/* 로그인 상태 유지 팝업 */
+#popup-login-status {
+  /* display: none; */
+  width: 360px;
+  border: solid 1px #666;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  /* #top-content가 부모 요소 */
+  position: absolute;
+  top: 280px;
+  left: -20px;
+}
+
+.popup-top {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eee;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.popup-top h1 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.popup-top .close {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.popup-content {
+  display: block;
+  margin-right: 16px;
+}
+
+.popup-content li {
+  color: #666;
+  font-size: 12px;
+  text-align: left;
+  padding-top: 2px;
+  padding-bottom: 1px;
+  line-height: 18px;
+}
+
+.popup-content .text-red {
+  color: red;
+}
+
+/*  */
+/* 빨간 에러메시지 */
+.error-message {
+  color: #ff6666;
+  font-size: 13px;
+  margin-bottom: 7px;
+  padding-top: 7px;
+  line-height: 17px;
+  display: none;
+}
+
+/* -------------------------------------------------------- */
+/* top content > right-banner */
+.right-banner {
+  margin-right: 100px;
+}
+
+.right-banner img {
+  width: 360px;
+}
+
+/* -------------------------------------------------------- */
+/* bottom content */
+.bottom-content a {
+  display: flex; /* 부모 요소를 flexbox로 설정 */
+  justify-content: center; /* 수평 가운데 정렬 */
+  align-items: center; /* 수직 가운데 정렬 */
+  margin-top: 20px;
+}
+
+/* -------------------------------------------------------- */
+/* footer */
+/* -------------------------------------------------------- */
+#footer {
+  text-align: center;
+  margin: 0 auto;
+  color: rgb(102, 102, 102);
+  font-size: 12px;
+  height: 50px;
+  line-height: 50px;
+}
