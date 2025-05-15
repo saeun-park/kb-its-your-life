@@ -12,7 +12,7 @@ HTML, CSS, JavaScript, Java, MySQL, JSP, Vue.js 등 다양한 기술을 바탕�
 
 - **진행 기간**: 2025.03.04 ~ 2025.08.21 (962시간)  
 - **주최 / 운영**: KB국민은행, 멀티캠퍼스  
-- **교육 방식**: 풀타임 오프라인 
+- **교육 방식**: 실습 중심의 풀타임 오프라인 부트캠프
 - **커리큘럼**:  
   - 웹 프론트엔드: HTML, CSS, JavaScript, Node.js, Vue.js  
   - 백엔드: Java, MySQL, JDBC, JSP/Servlet   
@@ -24,26 +24,25 @@ HTML, CSS, JavaScript, Java, MySQL, JSP, Vue.js 등 다양한 기술을 바탕�
 
 ```plaintext
 KB/
-├── 01_HTML_CSS_JS/           # HTML, CSS, JS 기본 문법 및 실습 코드
-├── 02_JAVA/                  # 자바 기본 문법 및 실습
-├── 03_DB/                    # MySQL 실습 및 데이터베이스 기초
-├── 04_JSP/                   # JSP/Servlet 실습 예제
-├── 05_Project/               # 가계부 웹 프로젝트 (Vue.js)
-└── README.md                 # 프로그램 소개 및 진행 내용 정리
+├── CSS/              # CSS 기초 문법 및 실습 코드
+├── HTML/             # HTML 태그 및 레이아웃 실습
+├── JavaScript/       # JavaScript 문법, DOM, 이벤트 실습
+├── Node.js/          # Node.js 서버 개발 및 실습 코드
+├── Vue.js/           # Vue.js 프레임워크 실습 코드
+├── mini_project/     # 개별 미니 프로젝트
+└── README.md         # 프로그램 소개 및 학습 기록
 ```
 
-### 주요 실습 
-실습 레파지토리 링크 바로가기
 
 ### 프로젝트
 
 
 ### 진행 현황
--[] HTML/CSS/JS 기초 학습 완료
--[] Java 기초 및 JDBC 연동 실습
--[] DB 설계 및 SQL 실습
--[] JSP/Servlet 기초 실습
--[] Vue.js 프로젝트 진행 중
+- [ ] HTML/CSS/JS 기초 학습 **`완료`**
+- [ ] Java 기초 및 JDBC 연동 실습
+- [ ] DB 설계 및 SQL 실습
+- [ ] JSP/Servlet 기초 실습
+- [ ] Vue.js 프로젝트 진행 중
 
 
 
