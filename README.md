@@ -67,11 +67,13 @@ KB/
 - YES24 로그인 페이지 클론코딩 `완료` [바로가기](https://github.com/saeun-park/KB/tree/595b318bf49d1544c59d214e2f9309a311d37ae5/mini_project/YES24)
 
 --- 
-### 🔗 KB Assignment Repository
-[실습 과제 바로가기](https://github.com/saeun-park/kb-assignment.git)
 
+### 🔗 Related Repositories
 
-
+| Repository | Description |
+|------------|-------------|
+| [KB Assignment](https://github.com/saeun-park/kb-assignment.git) | KB 부트캠프 실습 과제 저장소 |
+| [Algorithms](https://github.com/saeun-park/algorithms.git) | 알고리즘 문제 풀이 및 개념 정리 저장소 |
 
 
 
