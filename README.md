@@ -10,8 +10,9 @@ HTML, CSS, JavaScript, Java, MySQL, JSP, Vue.js 등 다양한 기술을 바탕�
 ```plaintext
 KB/
 ├── CSS/              # CSS 기초 문법 및 실습 코드
-├── HTML/             # HTML 태그 및 레이아웃 실습
-├── JavaScript/       # JavaScript 문법, DOM, 이벤트 실습
+├── HTML/             # HTML 태그 및 레이아웃 실습 코드
+├── Java/             # Java 기초 문법부터 클래스, 상속, 예외 처리 등 실습 코드
+├── JavaScript/       # JavaScript 문법, DOM, 이벤트 실습 코드
 ├── Node.js/          # Node.js 서버 개발 및 실습 코드
 ├── Vue.js/           # Vue.js 프레임워크 실습 코드
 ├── mini_project/     # 개별 미니 프로젝트
