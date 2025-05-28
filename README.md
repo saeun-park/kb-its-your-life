@@ -27,7 +27,7 @@ KB/
 - **주최/운영**: KB국민은행, 멀티캠퍼스  
 - **교육 방식**: 실습 중심의 풀타임 오프라인 부트캠프
 - **주요 기술 스택**:  
-  - 웹 프론트엔드: HTML, CSS, JavaScript, Node.js, Vue.js  
+  - 웹 프론트엔드: HTML/CSS/JavaScript, Node.js, Vue.js  
   - 백엔드: Java, MySQL, JDBC, JSP/Servlet   
 
 ### 📚 커리큘럼 상세
