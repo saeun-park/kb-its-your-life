@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.scoula'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // CSV 파일 읽기
+    implementation 'com.opencsv:opencsv:5.8'
+
+    // MySQL JDBC 드라이버
+    implementation 'com.mysql:mysql-connector-j:8.0.33'
+
+    // 롬복 (Getter/Setter 자동 생성 등)
+    compileOnly 'org.projectlombok:lombok:1.18.32'
+    annotationProcessor 'org.projectlombok:lombok:1.18.32'
+
+    // 테스트
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}
