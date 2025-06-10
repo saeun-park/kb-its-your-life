@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.scoula.jdbc_ex.dao.UserDaoTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-06-02T02:36:43" hostname="MacBook-Air.local" time="0.011">
+  <properties/>
+  <testcase name="user를 등록합니다." classname="org.scoula.jdbc_ex.dao.UserDaoTest" time="0.011"/>
+  <system-out><![CDATA[3단계 : sql문 객체로 만들기 성공함.
+실행될 row수 1
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
