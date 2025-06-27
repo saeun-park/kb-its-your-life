@@ -28,7 +28,7 @@ KB/
 - **교육 방식**: 실습 중심의 풀타임 오프라인 부트캠프
 - **주요 기술 스택**:  
   - 웹 프론트엔드: HTML/CSS/JavaScript, Node.js, Vue.js  
-  - 백엔드: Java, MySQL, JDBC, JSP/Servlet   
+  - 백엔드: Java, MySQL, JDBC, JSP/Servlet, Spring  
 
 ### 📚 커리큘럼 상세
 ##### 1. 웹 프론트엔드 기초
@@ -41,9 +41,9 @@ KB/
 - DOM 조작 및 이벤트 처리
 - 비동기 처리 (Callback, Promise, async/await)
 
-##### 3. 백엔드 기초 (Java & JSP)
+##### 3. 백엔드 기초 (Java & JSP/Servlet)
 - Java 기초 문법 및 객체지향 프로그래밍
-- JSP/Servlet 기반 웹 애플리케이션 개발
+- JSP/Servlet 기반 MVC 웹 애플리케이션 개발
 - JDBC를 활용한 데이터베이스 연동
 
 ##### 4. 데이터베이스
@@ -51,10 +51,11 @@ KB/
 - SQL 쿼리 작성, CRUD 실습
 - 데이터 연동 및 서버 통신 처리
 
-##### 5. 프레임워크 실습
-- Vue.js 기반 컴포넌트 구성
-- Vue CLI 및 SPA 구성
-- 프로젝트 기반의 실습 중심 학습
+##### 5. Spring 프레임워크
+- Spring Framework 기반 웹 애플리케이션 구조 학습
+- 의존성 주입(DI), IoC 컨테이너 개념 이해
+- Spring MVC 및 RESTful API 실습
+
 
 ##### 6. 실전 프로젝트 및 해커톤
 - 웹 풀스택 미니 프로젝트 기획·구현
