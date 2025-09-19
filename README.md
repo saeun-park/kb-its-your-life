@@ -63,7 +63,7 @@ KB/
 - 최종 해커톤 발표 및 코드 리뷰
 
 ---
-### 프로젝트
+### 미니 프로젝트
 - 온라인 가계부 서비스 개발 `완료` [바로가기](https://github.com/SuccessInnovation/AccountBook.git)
 - 절주온 홈페이지 클론코딩 `완료` [바로가기](https://github.com/SuccessInnovation/AlcoholStop.git)
 - YES24 로그인 페이지 클론코딩 `완료` [바로가기](https://github.com/saeun-park/KB/tree/595b318bf49d1544c59d214e2f9309a311d37ae5/mini_project/YES24)
